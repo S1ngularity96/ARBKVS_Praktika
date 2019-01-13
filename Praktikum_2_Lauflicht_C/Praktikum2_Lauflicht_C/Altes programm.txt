@@ -1,0 +1,16 @@
+if(zaehler < 2){
+			if(richtung == 1){
+				PORTB = (pos);
+				pos = pos << 1;
+				
+			}else{
+				PORTB = (pos);
+				pos = pos >> 1;
+			}
+			
+			zaehler++;
+			_delay_ms(5000);
+		}else{
+			richtung = ~richtung;
+			zaehler = 0;
+		}
